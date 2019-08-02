@@ -1,7 +1,4 @@
-# Token types
-#
-# EOF (end-of-file) token is used to indicate that
-# there is no more input left for lexical analysis
+
 INTEGER, PLUS, MINUS, EOF = 'INTEGER', 'PLUS', 'MINUS', 'EOF'
 
 
@@ -38,9 +35,7 @@ class Interpreter(object):
         self.current_token = None
         self.current_char = self.text[self.pos]
 
-    ##########################################################
-    # Lexer code                                             #
-    ##########################################################
+    
     def error(self):
         raise Exception('Invalid syntax')
 
